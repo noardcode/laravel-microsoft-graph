@@ -30,7 +30,7 @@ class MicrosoftGraphClient
      * MicrosoftGraphClient constructor.
      * @param AccessToken|null $accessToken
      */
-    public function __construct(AccessToken $accessToken = null)
+    public function __construct(?AccessToken $accessToken = null)
     {
         $this->accessToken = $accessToken;
     }
