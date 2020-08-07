@@ -1,0 +1,52 @@
+{
+    "name": "noardcode/laravel-microsoft-graph",
+    "description": "This Laravel package provides a convenient interface for the Microsoft Graph API.",
+    "type": "library",
+    "keywords": [
+        "noardcode",
+        "laravel-microsoft-graph",
+        "laravel",
+        "microsoft",
+        "microsoft 365",
+        "office",
+        "office 365",
+        "graph api"
+    ],
+    "homepage": "https://github.com/noardcode/laravel-microsoft-graph",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "laravel/framework": "^7.0",
+        "microsoft/microsoft-graph": "^1.15"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2.6"
+    },
+    "authors": [
+        {
+            "name": "Chris Hagg",
+            "email": "chris@noardcode.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Noardcode\\MicrosoftGraph\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noardcode\\MicrosoftGraph\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Noardcode\\MicrosoftGraph\\MicrosoftGraphServiceProvider"
+            ]
+        }
+    }
+}
